@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Moises Mannarino Javascript</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-static/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+     
+      #botonera a {
+        margin: 5px;
+        color: white;
+      }
+      .eliminado{
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .card-eliminados{
+        padding: 10px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: white;
+        margin: 3px;
+        margin-top: 20px;
+
+      }
+      .card-body{
+        display: inline-block;
+        width: 300px;
+      }
+      #contenedor{
+        max-width: 600px;
+        margin: auto;
+      }
+      #botonera{
+        display: flex;
+        justify-content: center;
+      }
+      #elementosEliminados{
+        display: flex;
+        max-width: 900px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      #reconstruir{
+        display: none;
+      }
+      .desaparecido{
+        animation-name: ejemplo;
+        animation-duration: 2s;
+        animation-fill-mode:forwards;
+      }
+      .display-none{
+        display: none;
+      }
+      @keyframes ejemplo {
+        from {height: 200px;}
+        to {height: 0px;}
+      }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">Moises Mannarino </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </nav>
+    <ul class="nav justify-content-center">
+     
+      <li class="nav-item">
+        <a class="nav-link" href="arraySimpson.html">Volver a index</a>
+      </li>
+      
+    </ul>
+
+<main role="main" class="container">
+  <div class="jumbotron">
+    <div id="desaparecer">
+      <h1>Trabajo con arrays</h1>
+      
+      <p class="lead">En este script primero contruyo parte del dom, iterando un array y creando elementos dom y cargando sus valores dinamicamente desde un array el cual itero, concretamente creo y construyo la foto dinamicamente y tambien los botones.</p>
+      <p class="lead">Luego por medio de los botones elimino elementos de un array, y agrego el elemento eliminado a otro array el cual itero con todos los elementos que se van eliminado, este segundo array es el array de los elementos eliminados.</p>
+      <p class="lead">Tambien hago otras cosas como manejo de eventos, agregar animaciones css ante un evento, y recargar el navegador mediante funciones javascript,etc. </p>
+      <p><b>Puedes ver el codigo aqui abajo</b></p>
+      <h3>Codigo HTML</h3>
+      <img src="img/html1.jpg">
+      <h3>Codigo Javascript</h3>
+      <img src="img/script1.jpg">
+      <img src="img/script2.jpg">
+      <img src="img/script3.jpg">
+      <img src="img/script4.jpg">
+    </div>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Moises Mannarino Javascript</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-static/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      img{
+      height: 350px;
+      margin-left: 5px;
+      }
+      #botonera a {
+        margin: 5px;
+        color: white;
+      }
+      .eliminado{
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .card-eliminados{
+        padding: 10px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: white;
+        margin: 3px;
+        margin-top: 20px;
+
+      }
+      .card-body{
+        display: inline-block;
+        width: 300px;
+      }
+      #contenedor{
+        max-width: 600px;
+        margin: auto;
+      }
+      #botonera{
+        display: flex;
+        justify-content: center;
+      }
+      #elementosEliminados{
+        display: flex;
+        max-width: 900px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      #reconstruir{
+        display: none;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      .desaparecido{
+        animation-name: ejemplo;
+        animation-duration: 2s;
+        animation-fill-mode:forwards;
+      }
+      .display-none{
+        display: none;
+      }
+      @keyframes ejemplo {
+        from {height: 200px;}
+        to {height: 0px;}
+      }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">Moises Mannarino </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </nav>
+    <ul class="nav justify-content-center">
+     
+     
+      <li class="nav-item">
+        <a class="nav-link" href="explicacionLarga.html">Ir a ver la explicación completa</a>
+      </li>
+      
+    </ul>
+
+  <main role="main" class="container">
+  <div class="jumbotron">
+    <div id="desaparecer">
+      <h1>Script javascript de trabajo con arrays</h1>
+      <p class="lead">En este script contruyo parte del dom dinamicamente iterando un array, luego hago eliminacion de elementos de un array, agregar elementos a otro array, agregar animacioens css ante un evento, etc.</p>
+      
+    </div>
+
+    <div id="contenedor">
+    <!--<img src="img/homero.png">
+    <img src="img/bart.png">
+    <img src="img/magui2.jpg">
+    <img src="img/lisa.jpg">
+    <img src="img/marge.png"> -->
+
+    </div>
+    <button id="reconstruir" class="btn btn-success">reconstruir</button>
+    <div id="botonera"></div>
+
+    <h2>Elementos eliminados</h2>
+    <div id="elementosEliminados">
+        <p>Aqui apareceran cuando los elimines </p>
+    </div>
+  </div>
+
+<script type="text/javascript" src="arrayTheSimpson.js"></script>
+
+</body>
+</html>
